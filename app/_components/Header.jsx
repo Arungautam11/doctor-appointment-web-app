@@ -12,17 +12,37 @@ function Header() {
         },
         {
             id:2,
-            name:'Explore',
-            path:'/explore'
+            name:'About Us',
+            path:'/about-us'
         },
         {
             id:3,
+            name:'Services',
+            path:'/services'
+        },
+        {
+            id:4,
+            name:'Pricing',
+            path:'/pricing'
+        },
+        {
+            id:5,
+            name:'Gallery',
+            path:'/gallery'
+        },
+        {
+            id:6,
+            name:'Blogs',
+            path:'/blogs'
+        },
+        {
+            id:7,
             name:'Contact Us',
             path:'/contact-us'
         },
     ]
   return (
-    <div className='flex items-center justify-between p-4 shadow-sm'>
+    <div className='flex items-center justify-between p-4 shadow-sm container'>
       <div className='flex items-center gap-10'>
         <Image src='/logo.svg' alt='logo'
         width={180} height={80}
@@ -35,7 +55,7 @@ function Header() {
             ))}
         </ul>
       </div>
-      <Button>Get Started</Button>
+      <Button>Make Appointment</Button>
     </div>
   )
 }
